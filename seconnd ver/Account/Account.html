@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - Favorites</title>
+<link rel="stylesheet" href="Account.css">
+  <script defer>
+    // Example: Fetch user data from FastAPI
+    fetch('http://localhost:8000/user')
+      .then(response => response.json())
+      .then(data => {
+        console.log('User:', data);
+        // You can now update the DOM with this data
+      })
+      .catch(error => {
+        console.error('Error fetching user data:', error);
+      });
+</script>
+</head>
+<body>
+  <div class="title">Account</div>
+
+  <div class="profile">
+    <img src="https://placehold.co/100x100" alt="Profile">
+    <div class="profile-info">
+      <h2>Abdulkader Baghaffar</h2>
+      <p>Cooking connoisseur</p>
+    </div>
+  </div>
+
+  <div class="favorites-header">
+    <h3>My Favorites</h3>
+    <a href="#">See All</a>
+  </div>
+
+  <div class="favorites-grid">
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/166x208" alt="Sunny Egg">
+      <div class="info">
+        <h4>Sunny Egg & Toast Avocado</h4>
+        <p>Jane Smith</p>
+      </div>
+    </div>
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/144x97" alt="Bowl of noodle">
+      <div class="info">
+        <h4>Bowl of noodle with beef</h4>
+        <p>John Doe</p>
+      </div>
+    </div>
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/127x84" alt="Beef Burger">
+      <div class="info">
+        <h4>Easy homemade beef burger</h4>
+        <p>Ann Other</p>
+      </div>
+    </div>
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/140x170" alt="Egg Sandwich">
+      <div class="info">
+        <h4>Half boiled egg sandwich</h4>
+        <p>Mary Public</p>
+      </div>
+    </div>
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/143x215" alt="Avocado">
+      <div class="info">
+        <h4>Sunny side up with avocado</h4>
+        <p>Navabi Balqis</p>
+      </div>
+    </div>
+    <div class="favorite-card">
+      <img class="recipe-img" src="https://placehold.co/116x156" alt="Strawberry Sandwich">
+      <div class="info">
+        <h4>Sandwich with strawberry jam</h4>
+        <p>Alice Fala</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="icon">🏠</div>
+    <div class="icon">🔍</div>
+    <div class="icon">🍳</div>
+    <div class="icon">🔔</div>
+    <div class="icon active">👤</div>
+  </div>
+</body>
+</html>
+
+
+
+</body>
+  

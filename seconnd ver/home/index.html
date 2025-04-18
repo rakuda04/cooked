@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooked - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer>
+    // Example: Fetch user data from FastAPI
+    fetch('http://localhost:8000/user')
+      .then(response => response.json())
+      .then(data => {
+        console.log('User:', data);
+        // You can now update the DOM with this data
+      })
+      .catch(error => {
+        console.error('Error fetching user data:', error);
+      });
+</script>
+<link href="stylesheet" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="greeting">🌤 Good Morning</div>
+    <div class="username">Abdulkader</div>
+
+    <div class="section-title">
+      <span>Featured</span>
+    </div>
+
+    <div class="horizontal-scroll">
+      <div class="card">
+        <img src="https://placehold.co/200x120" alt="Featured dish" />
+        <h4>Asian white noodle with extra seafood</h4>
+        <div class="card-info">
+          <span>👤 Suhayb</span>
+          <span>•</span>
+          <span>⏱️ 20 Min</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x120" alt="Featured dish" />
+        <h4>Healthy Taco Salad with fresh vegetable</h4>
+        <div class="card-info">
+          <span>👤 Betty</span>
+          <span>•</span>
+          <span>⏱️ 12 Min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <span>Category</span>
+      <span style="color: #70B9BE; font-size: 14px;">See All</span>
+    </div>
+
+    <div class="category-buttons">
+      <button class="active">Breakfast</button>
+      <button>Lunch</button>
+      <button>Dinner</button>
+      <button>Snack</button>
+    </div>
+
+    <div class="section-title">
+      <span>Popular Recipes</span>
+      <span style="color: #70B9BE; font-size: 14px;">See All</span>
+    </div>
+
+    <div class="horizontal-scroll">
+      <div class="popular-card">
+        <img src="https://placehold.co/160x120" alt="Recipe" />
+        <h5>Healthy Taco Salad with fresh vegetable</h5>
+        <div class="info">
+          <span>🔥 120 Kcal</span>
+          <span>•</span>
+          <span>⏱️ 20 Min</span>
+        </div>
+      </div>
+      <div class="popular-card">
+        <img src="https://placehold.co/160x120" alt="Recipe" />
+        <h5>Japanese-style Pancakes Recipe</h5>
+        <div class="info">
+          <span>🔥 64 Kcal</span>
+          <span>•</span>
+          <span>⏱️ 12 Min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <img src="https://img.icons8.com/ios-filled/20/70B9BE/home.png" alt="Home" />
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/search--v1.png" alt="Search" />
+    <div class="fab">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/chef-hat.png" alt="FAB" />
+    </div>
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/appointment-reminders--v1.png" alt="Notifications" />
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/user--v1.png" alt="Profile" />
+  </div>
+
+</body>
+</html>
