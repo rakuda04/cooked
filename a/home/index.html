@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooked - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    .container {
+      padding: 16px 24px;
+    }
+    .greeting {
+      font-size: 14px;
+      color: white;
+      margin-top: 16px;
+    }
+    .username {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .horizontal-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      padding-bottom: 16px;
+    }
+    .card {
+      min-width: 200px;
+      background-color: #1F1F1F;
+      border-radius: 16px;
+      padding: 16px;
+      position: relative;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 16px;
+      margin-top: -40px;
+    }
+    .card h4 {
+      font-size: 16px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .card-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #97A2B0;
+    }
+    .category-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .category-buttons button {
+      padding: 8px 24px;
+      border-radius: 40px;
+      border: none;
+      font-size: 16px;
+      color: white;
+      background-color: #2C2C2E;
+      cursor: pointer;
+    }
+    .category-buttons .active {
+      background-color: #70B9BE;
+    }
+    .popular-card {
+      background-color: #1F1F1F;
+      border-radius: 16px;
+      padding: 12px;
+      min-width: 160px;
+    }
+    .popular-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .popular-card h5 {
+      margin: 10px 0 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .popular-card .info {
+      display: flex;
+      gap: 6px;
+      font-size: 12px;
+      color: #97A2B0;
+      align-items: center;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background-color: #1F1F1F;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 -10px 40px rgba(149, 168, 195, 0.15);
+    }
+    .bottom-nav img {
+      width: 24px;
+      height: 24px;
+    }
+    .fab {
+      width: 56px;
+      height: 56px;
+      background-color: #042628;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 0px 30px rgba(3, 3, 25, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="greeting">🌤 Good Morning</div>
+    <div class="username">Abdulkader</div>
+
+    <div class="section-title">
+      <span>Featured</span>
+    </div>
+
+    <div class="horizontal-scroll">
+      <div class="card">
+        <img src="https://placehold.co/200x120" alt="Featured dish" />
+        <h4>Asian white noodle with extra seafood</h4>
+        <div class="card-info">
+          <span>👤 Suhayb</span>
+          <span>•</span>
+          <span>⏱️ 20 Min</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/200x120" alt="Featured dish" />
+        <h4>Healthy Taco Salad with fresh vegetable</h4>
+        <div class="card-info">
+          <span>👤 Betty</span>
+          <span>•</span>
+          <span>⏱️ 12 Min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <span>Category</span>
+      <span style="color: #70B9BE; font-size: 14px;">See All</span>
+    </div>
+
+    <div class="category-buttons">
+      <button class="active">Breakfast</button>
+      <button>Lunch</button>
+      <button>Dinner</button>
+      <button>Snack</button>
+    </div>
+
+    <div class="section-title">
+      <span>Popular Recipes</span>
+      <span style="color: #70B9BE; font-size: 14px;">See All</span>
+    </div>
+
+    <div class="horizontal-scroll">
+      <div class="popular-card">
+        <img src="https://placehold.co/160x120" alt="Recipe" />
+        <h5>Healthy Taco Salad with fresh vegetable</h5>
+        <div class="info">
+          <span>🔥 120 Kcal</span>
+          <span>•</span>
+          <span>⏱️ 20 Min</span>
+        </div>
+      </div>
+      <div class="popular-card">
+        <img src="https://placehold.co/160x120" alt="Recipe" />
+        <h5>Japanese-style Pancakes Recipe</h5>
+        <div class="info">
+          <span>🔥 64 Kcal</span>
+          <span>•</span>
+          <span>⏱️ 12 Min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <img src="https://img.icons8.com/ios-filled/20/70B9BE/home.png" alt="Home" />
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/search--v1.png" alt="Search" />
+    <div class="fab">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/chef-hat.png" alt="FAB" />
+    </div>
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/appointment-reminders--v1.png" alt="Notifications" />
+    <img src="https://img.icons8.com/ios-filled/20/97A2B0/user--v1.png" alt="Profile" />
+  </div>
+
+</body>
+</html>

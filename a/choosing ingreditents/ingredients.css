@@ -1,0 +1,166 @@
+
+    :root {
+      --text-white: white;
+      --text-muted: #748189;
+      --text-highlight: #70B9BE;
+      --text-dark: #0A2533;
+    }
+
+    body {
+      margin: 0;
+      font-family: Roboto, sans-serif;
+      background-color: #121212;
+      color: var(--text-white);
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    .sub-title {
+      color: var(--text-muted);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.2px;
+      margin-bottom: 24px;
+    }
+
+    .select-link {
+      color: var(--text-highlight);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21.6px;
+    }
+
+    .ingredient-card {
+      display: flex;
+      align-items: center;
+      background-color: #2C2C2E;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0px 2px 16px rgba(5, 51, 54, 0.1);
+    }
+
+    .ingredient-img {
+      width: 48px;
+      height: 48px;
+      background-color: #E6EBF2;
+      border-radius: 8px;
+      margin-right: 16px;
+    }
+
+    .ingredient-name {
+      flex: 1;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 19.8px;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .counter button {
+      width: 24px;
+      height: 24px;
+      border: 1px solid var(--text-highlight);
+      border-radius: 4px;
+      background: none;
+      color: var(--text-highlight);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .counter span {
+      width: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Sofia Pro', sans-serif;
+      font-weight: 400;
+      line-height: 21.6px;
+    }
+
+    .search-btn {
+      width: 100%;
+      padding: 16px;
+      background-color: var(--text-highlight);
+      border: none;
+      border-radius: 16px;
+      color: var(--text-white);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21.6px;
+      cursor: pointer;
+      margin: 24px 0;
+    }
+
+    .related-section {
+      border-top: 1px solid #EBF0F6;
+      padding-top: 16px;
+    }
+
+    .related-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .related-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    .see-all {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-highlight);
+      line-height: 18.2px;
+    }
+
+    .related-recipes {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+    }
+
+    .related-card {
+      width: 100px;
+      background-color: #2C2C2E;
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0px 2px 16px rgba(5, 51, 54, 0.1);
+    }
+
+    .related-card img {
+      width: 84px;
+      height: 84px;
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto 8px;
+    }
+
+    .related-name {
+      font-size: 16px;
+      color: var(--text-dark);
+      line-height: 23.2px;
+      text-align: center;
+      font-weight: 400;
+    }
+
