@@ -68,7 +68,6 @@ body {
 
   .horizontal-scroll {
     display: flex;
-    overflow-x: auto;
     gap: 16px;
   }
 
@@ -84,7 +83,8 @@ body {
   .recipe-card img {
     width: 84px;
     height: 84px;
-    border-radius: 16px;
+    border-radius: 12px;
+    object-fit: cover;
   }
 
   .recipe-card p {
@@ -104,8 +104,7 @@ body {
   .editor-card img {
     width: 100px;
     height: 84px;
-    border-radius: 16px;
-    margin-right: 16px;
+    border-radius: 12px;
     object-fit: cover;
   }
 

@@ -20,6 +20,7 @@ body {
     border-radius: 16px;
     padding: 16px;
     margin: 24px;
+    position: relative; /* Add this to position the settings icon */
   }
   .profile img {
     width: 48px;
@@ -90,4 +91,27 @@ body {
     font-size: 14px;
     color: #97A2B0;
     margin: 0;
+  }
+  .settings-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .settings-icon img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+  }
+  
+  .settings-icon:hover img {
+    opacity: 1;
   }

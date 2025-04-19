@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cooked - Home</title>
   <link rel="stylesheet" href="../common/common.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script defer>
-    fetch('../common/taskbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('.phone-wrapper').insertAdjacentHTML('beforeend', data);
-      })
-      .catch(error => console.error('Error loading taskbar:', error));
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <div class="phone-wrapper">
-    <div class="container">
-      <div class="greeting">🌤 Good Morning</div>
-      <div class="username">Abdulkader</div>
 
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header-row">
+        <div>
+          <div class="greeting">🌤 Good Morning</div>
+          <h1 class="username">Abdulkader</h1>
+        </div>
+
+      </div>
+
+      <!-- Featured Section -->
       <div class="section-title">
         <span>Featured</span>
       </div>
 
       <div class="horizontal-scroll">
         <div class="card">
-          <img src="https://placehold.co/200x120" alt="Featured dish" />
+          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=580" alt="Asian noodles" />
           <h4>Asian white noodle with extra seafood</h4>
           <div class="card-info">
             <span>👤 Suhayb</span>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://placehold.co/200x120" alt="Featured dish" />
+          <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?q=80&w=580" alt="Healthy salad" />
           <h4>Healthy Taco Salad with fresh vegetable</h4>
           <div class="card-info">
             <span>👤 Betty</span>
@@ -47,6 +47,7 @@
         </div>
       </div>
 
+      <!-- Category Section -->
       <div class="section-title">
         <span>Category</span>
         <span style="color: #70B9BE; font-size: 14px;">See All</span>
@@ -59,6 +60,7 @@
         <button>Snack</button>
       </div>
 
+      <!-- Popular Recipes -->
       <div class="section-title">
         <span>Popular Recipes</span>
         <span style="color: #70B9BE; font-size: 14px;">See All</span>
@@ -66,7 +68,7 @@
 
       <div class="horizontal-scroll">
         <div class="popular-card">
-          <img src="https://placehold.co/160x120" alt="Recipe" />
+          <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?q=80&w=580" alt="Taco salad" />
           <h5>Healthy Taco Salad with fresh vegetable</h5>
           <div class="info">
             <span>🔥 120 Kcal</span>
@@ -75,7 +77,7 @@
           </div>
         </div>
         <div class="popular-card">
-          <img src="https://placehold.co/160x120" alt="Recipe" />
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=580" alt="Japanese pancakes" />
           <h5>Japanese-style Pancakes Recipe</h5>
           <div class="info">
             <span>🔥 64 Kcal</span>
@@ -84,6 +86,15 @@
           </div>
         </div>
       </div>
+    </div>
+    
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+      <a href="../home/index.html" class="icon active"><img src="https://img.icons8.com/ios-filled/20/70B9BE/home.png" alt="Home" /></a>
+      <a href="../search/search.html" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/search--v1.png" alt="Search" /></a>
+      <a href="../choosing ingreditents/ingredients.html" class="icon"><img src="https://img.icons8.com/ios-filled/24/97A2B0/chef-hat.png" alt="Ingredients" /></a>
+      <a href="#" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/appointment-reminders--v1.png" alt="Notifications" /></a>
+      <a href="../Account/Account.html" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/user--v1.png" alt="Profile" /></a>
     </div>
   </div>
 </body>

@@ -37,6 +37,11 @@
   flex: 1; /* Allow the container to take up available space */
   overflow-y: auto; /* Enable scrolling for the content */
   padding: 16px;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -45,5 +50,5 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: #f0f0f0; /* Background outside the phone wrapper */
+
 }
