@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Search</title>
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="../common/common.css">
+
+  <script defer>
+    fetch('../common/taskbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('.phone-wrapper').insertAdjacentHTML('beforeend', data);
+      })
+      .catch(error => console.error('Error loading taskbar:', error));
+  </script>
+</head>
+<body>
+  <div class="phone-wrapper">
+    <div class="header">Search</div>
+    <div class="container">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/search--v1.png" alt="Search Icon">
+        <input type="text" placeholder="Search"/>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-button active">Breakfast</button>
+        <button class="filter-button">Lunch</button>
+        <button class="filter-button">Dinner</button>
+        <button class="filter-button">Snack</button>
+      </div>
+
+      <!-- Popular Recipes -->
+      <div class="section-title">
+        <span>Popular Recipes</span>
+        <a href="#" style="color: #70B9BE; font-size: 16px;">View All</a>
+      </div>
+      <div class="horizontal-scroll">
+        <div class="recipe-card">
+          <img src="https://placehold.co/84x84" alt="Egg & Avocado">
+          <p>Egg & Avo...</p>
+        </div>
+        <div class="recipe-card">
+          <img src="https://placehold.co/84x84" alt="Bowl of Ramen">
+          <p>Bowl of r...</p>
+        </div>
+        <div class="recipe-card">
+          <img src="https://placehold.co/84x84" alt="Chicken Steak">
+          <p>Chicken S...</p>
+        </div>
+      </div>
+
+      <!-- Editor's Choice -->
+      <div class="section-title">
+        <span>Editor’s Choice</span>
+        <a href="#" style="color: #70B9BE; font-size: 16px;">View All</a>
+      </div>
+
+      <div class="editor-card">
+        <img src="https://placehold.co/100x84" alt="Burger">
+        <div class="editor-info">
+          <h4>Easy homemade beef burger</h4>
+          <p>John Doe</p>
+        </div>
+      </div>
+
+      <div class="editor-card">
+        <img src="https://placehold.co/100x84" alt="Blueberry egg">
+        <div class="editor-info">
+          <h4>Blueberry with egg for breakfast</h4>
+          <p>Jane Smith</p>
+        </div>
+      </div>
+
+      <div class="editor-card">
+        <img src="https://placehold.co/100x84" alt="Toast egg">
+        <div class="editor-info">
+          <h4>Toast with egg for breakfast</h4>
+          <p>Agnes</p>
+        </div>
+      </div>
+    </div>
+    <!-- Move the bottom navigation bar here -->
+   
+  </div>
+</body>
+</html>

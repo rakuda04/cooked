@@ -1,0 +1,49 @@
+.bottom-nav {
+  background: #2C2C2E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
+  flex-shrink: 0; /* Prevent the navbar from shrinking */
+  position: relative; /* Ensure it stays inside the phone-wrapper */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.bottom-nav .icon img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+}
+
+.bottom-nav .icon.active img {
+  filter: none;
+}
+
+.phone-wrapper {
+  width: 420px; /* Increase the width */
+  height: 750px; /* Increase the height */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 16px; /* Optional: rounded corners */
+  overflow: hidden;
+  position: relative;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Allow the container to take up available space */
+  overflow-y: auto; /* Enable scrolling for the content */
+  padding: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f0f0f0; /* Background outside the phone wrapper */
+}
