@@ -6,14 +6,7 @@
   <title>Ingredients Choosing</title>
   <link rel="stylesheet" href="./choosing-ingreditents/ingredients.css">
   <link rel="stylesheet" href="./common/common.css">
-  <script defer>
-    fetch('./common/taskbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.querySelector('.phone-wrapper').insertAdjacentHTML('beforeend', data);
-      })
-      .catch(error => console.error('Error loading taskbar:', error));
-  </script>
+
 </head>
 <body>
   <div class="phone-wrapper">
@@ -96,6 +89,13 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="bottom-nav">
+    <a href="index.html" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/home.png" alt="Home" /></a>
+    <a href="search.html" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/search--v1.png" alt="Search" /></a>
+    <a href="ingredients.html" class="icon"><img src="https://img.icons8.com/ios-filled/24/ffffff/chef-hat.png" alt="Ingredients" /></a>
+    <a href="#" class="icon"><img src="https://img.icons8.com/ios-filled/20/97A2B0/appointment-reminders--v1.png" alt="Notifications" /></a>
+    <a href="Account.html" class="icon active"><img src="https://img.icons8.com/ios-filled/20/70B9BE/user--v1.png" alt="Profile" /></a>
   </div>
   </div>
 </body>
